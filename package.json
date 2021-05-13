@@ -1,7 +1,7 @@
 {
   "name": "vue3-jsx-jss",
   "version": "0.1.0",
-  "private": true,
+  "main": "dist/index.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build:core": "TYPE=lib vue-cli-service build --target lib --name index --no-clean lib/index.ts",
@@ -13,6 +13,9 @@
     "vue3",
     "jss",
     "css in js"
+  ],
+  "files": [
+    "dist"
   ],
   "author": "Kingdom",
   "license": "MIT",
