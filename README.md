@@ -7,7 +7,7 @@
   <a href="https://www.npmjs.com/package/vue"><img src="https://david-dm.org/pure-vue/vue-jss.svg" alt="Dependencies"></a>
 </p>
 
-vue-jss is fully tested css in js library for vue based on [jss](https://cssinjs.org/).
+vue3-jsx-jss is fully tested css in js library for vue based on [jss](https://cssinjs.org/).
 
 Thanks to the jss team, we can easily implement css in js in vue. Css in js is more powerful in:
 
@@ -35,7 +35,7 @@ yarn add vue3-jsx-jss -S
 import { defineComponent } from 'vue'
 import { createStyleObject } from 'vue3-jsx-jss'
 
-// Create your Styles. Remember, since Vue-JSS uses the default preset,
+// Create your Styles. Remember, since vue3-jsx-jss uses the default preset,
 // most plugins are available without further configuration needed.
 const useStyles = createStyleObject({
   myButton: {
