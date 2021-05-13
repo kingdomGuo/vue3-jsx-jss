@@ -37,7 +37,7 @@ import { createStyleObject } from 'vue3-jsx-jss'
 
 // Create your Styles. Remember, since Vue-JSS uses the default preset,
 // most plugins are available without further configuration needed.
-const useStyles = createUseStyles({
+const useStyles = createStyleObject({
   myButton: {
     color: 'green',
     margin: {
@@ -73,7 +73,34 @@ const Button = defineComponent({
 const App = () => <Button>Submit</Button>
 
 render(<App />, document.getElementById('root'))
-、、、
+```
+
+The above code will compile to
+
+```html
+<div id="root">
+  <button class="Button-myButton-1-25">
+    <span class="Button-myLabel-1-26">
+      Submit
+    </span>
+  </button>
+</div>
+```
+
+and
+
+```css
+.Button-myButton-1-25 {
+  color: green;
+  margin: 5px 0 0 1rem;
+}
+.Button-myButton-1-25 span {
+  font-weight: bold;
+}
+.Button-myLabel-1-26 {
+  font-style: italic;
+}
+```
 
 
 
