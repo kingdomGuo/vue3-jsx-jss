@@ -6,12 +6,13 @@ import * as CSS from 'csstype'
 export {}
 
 // private JSS type that should be public
-// CSS.Properties <number | string | Record<symbol, unknown>>
-type JSSNormalCssProperties = CSS.Properties<number| string| Record<symbol, unknown>>
-// type JSSFontface = CSS.AtRule.FontFace & { fallbacks?: CSS.AtRule.FontFace[] };
+type JSSNormalCssProperties = CSS.Properties<number| string>
 
-export type PropsFunc<Props extends Record<symbol, unknown>, T> = (props: Props) => T
+export type PropsFunc<Props extends Record<symbol, unknown>, T> = (props: any) => T
 
+// const a: PropsFunc<typeof {}, {padding:number}> = (MyProps: MyProps) => ({ padding: MyProps.spacing })
+
+// console.log(a)
 /**
  * Allows the user to augment the properties available
  */
@@ -29,18 +30,23 @@ export interface CSSProperties extends BaseCSSProperties {
   [k: string]: unknown | CSSProperties
 }
 
-export type BaseCreateCSSProperties<Props extends Record<symbol, unknown>> = {
+export type BaseCreateCSSProperties<Props> =
+| {
   [P in keyof BaseCSSProperties]:
     | BaseCSSProperties[P]
     | PropsFunc<Props, BaseCSSProperties[P]>
 }
+| {
+  [K: string]: BaseCreateCSSProperties<Props>
+}
 
-export interface CreateCSSProperties<Props extends Record<symbol, unknown>>
-  extends BaseCreateCSSProperties<Props> {
+export interface CreateCSSProperties<Props>
+// extends BaseCreateCSSProperties<Props>
+   {
   // Allow pseudo selectors and media queries
   [k: string]:
     | BaseCreateCSSProperties<Props>[keyof BaseCreateCSSProperties<Props>]
-    | CreateCSSProperties<Props>
+    | CreateCSSProperties<Props> | BaseCSSProperties
 }
 
 /**
