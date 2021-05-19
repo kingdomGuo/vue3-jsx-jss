@@ -214,8 +214,8 @@ const Button = defineComponent({
   setup(props, { slots }) {
     const classes = useStyles( {...props}).value
     return () => (
-      <button className={classes.myButton}>
-        <span className={classes.myLabel}>
+      <button class={classes.myButton}>
+        <span class={classes.myLabel}>
           {slots.default && slots.default()}
         </span>
       </button>
@@ -295,8 +295,8 @@ const Button = defineComponent({
     const theme = useTheme().value
     const classes = useStyles({ ...props, theme }).value
     return () => (
-      <button className={classes.button}>
-        <span className={classes.label}>
+      <button class={classes.button}>
+        <span class={classes.label}>
           {slots.default && slots.default()}
         </span>
       </button>

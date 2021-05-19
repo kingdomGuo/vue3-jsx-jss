@@ -3,9 +3,12 @@
     "target": "esnext",
     "module": "esnext",
     "strict": true,
+    "jsxFactory": "h",
     "jsx": "preserve",
     "importHelpers": true,
     "moduleResolution": "node",
+    "declaration": true,
+    "declarationDir": "dist",
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
@@ -16,9 +19,7 @@
       "jest"
     ],
     "paths": {
-      "@/*": [
-        "src/*"
-      ]
+      "@/*": ["lib/*"]
     },
     "lib": [
       "esnext",
