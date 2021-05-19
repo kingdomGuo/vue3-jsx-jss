@@ -2950,20 +2950,10 @@ babel-jest@^24.9.0:
     chalk "^2.4.2"
     slash "^2.0.0"
 
-babel-loader@^8.1.0:
+babel-loader@^8.1.0, babel-loader@^8.2.2:
   version "8.2.2"
   resolved "https://registry.nlark.com/babel-loader/download/babel-loader-8.2.2.tgz#9363ce84c10c9a40e6c753748e1441b60c8a0b81"
   integrity sha1-k2POhMEMmkDmx1N0jhRBtgyKC4E=
-  dependencies:
-    find-cache-dir "^3.3.1"
-    loader-utils "^1.4.0"
-    make-dir "^3.1.0"
-    schema-utils "^2.6.5"
-
-babel-loader@^8.2.2:
-  version "8.2.2"
-  resolved "https://registry.yarnpkg.com/babel-loader/-/babel-loader-8.2.2.tgz#9363ce84c10c9a40e6c753748e1441b60c8a0b81"
-  integrity sha512-JvTd0/D889PQBtUXJ2PXaKU/pjZDMtHA9V2ecm+eNRmmBCMR09a+fmpGTNwnJtFmFl5Ei7Vy47LjBb+L0wQ99g==
   dependencies:
     find-cache-dir "^3.3.1"
     loader-utils "^1.4.0"
@@ -13280,10 +13270,10 @@ vue-template-es2015-compiler@^1.6.0, vue-template-es2015-compiler@^1.9.0:
   resolved "https://registry.npm.taobao.org/vue-template-es2015-compiler/download/vue-template-es2015-compiler-1.9.1.tgz#1ee3bc9a16ecbf5118be334bb15f9c46f82f5825"
   integrity sha1-HuO8mhbsv1EYvjNLsV+cRvgvWCU=
 
-vue3-jsx-jss@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/vue3-jsx-jss/-/vue3-jsx-jss-0.1.0.tgz#f814f1628ee8301f3925ffb4a7b00947188e2a02"
-  integrity sha512-SxxzLUXFc12KgjUHxtERAxXu5yMYX0y+qUO6o426e8jtACMsrXNogxdAnuNCkJGXT8iemkhK8YpIt5IOrJYlhQ==
+vue3-jsx-jss@^0.1.0, vue3-jsx-jss@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/vue3-jsx-jss/-/vue3-jsx-jss-0.1.1.tgz#706472a47cba26f49eaa490a4bee2456da275d12"
+  integrity sha512-CNpi3+gHZKkmsaIplhq8Vo0jg9UhP5mzY4GAEbNxmvcrj4CBvtvecI9TSwFJdO8pjStKO3JQE2ArhhrpvxiLDg==
   dependencies:
     core-js "^3.6.5"
     csstype "^3.0.8"
@@ -13291,6 +13281,7 @@ vue3-jsx-jss@^0.1.0:
     jss-preset-default "^10.6.0"
     tiny-warning "^1.0.3"
     vue "^3.0.0"
+    vue3-jsx-jss "^0.1.0"
 
 vue@^3.0.0:
   version "3.0.11"

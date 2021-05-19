@@ -1,6 +1,6 @@
 
 import { defineComponent } from 'vue'
-import { createStyleObject, JssProvider, createThemes } from '../lib'
+import { createStyleObject, JssProvider, createThemes } from 'vue3-jsx-jss'
 const generateId = (rule: any, sheet:any) => 'some-id'
 // Creating a namespaced theming object.
 const ThemeContext = Symbol('')
