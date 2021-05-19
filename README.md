@@ -4,7 +4,7 @@
   <a href="https://www.npmjs.com/package/vue3-jsx-jss"><img src="https://img.shields.io/npm/v/vue3-jsx-jss" alt="Version"></a>
   <a href="https://www.npmjs.com/package/vue3-jsx-jss"><img src="https://img.shields.io/github/license/kingdomGuo/vue3-jsx-jss" alt="License"></a>
   <a href="https://www.npmjs.com/package/vue3-jsx-jss"><img src="https://img.shields.io/bundlephobia/minzip/vue3-jsx-jss" alt="Size"></a>
-  <a href="https://www.npmjs.com/package/vue3-jsx-jss"><img src="https://david-dm.org/pure-vue/vue-jss.svg" alt="Dependencies"></a>
+  <a href="https://www.npmjs.com/package/vue3-jsx-jss"><img src="https://img.shields.io/david/kingdomGuo/vue3-jsx-jss" alt="Dependencies"></a>
 </p>
 
 vue3-jsx-jss is fully tested css in js library for vue based on [jss](https://cssinjs.org/).
